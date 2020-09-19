@@ -1250,6 +1250,7 @@ PORTFOLIO
 }
 .project-item a {
   cursor: url('../img/projects2.cur'), projetos !important;
+  border-style: hidden;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1264,7 +1265,7 @@ PORTFOLIO
   height: 250px;
   text-align: center;
   color: #ffffff;
-  padding: 15px;
+  padding: 35px;
 }
 .project-thumbnail:hover {
   color: #ffffff;
