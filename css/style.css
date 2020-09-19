@@ -1,8 +1,8 @@
 /*------------------------------------------------------------------
 [Component Style Stylesheet]
 Version:    1.3
-Last change:    13/12/2014 [fixed Float bug, vf]
-Author: themesmile
+Last change:    9/19/2020 [fixed Float bug, vf]
+Author: themesmile (Changes by Carson P)
 -------------------------------------------------------------------*/
 
 body {
@@ -1233,6 +1233,113 @@ SKILL
 PORTFOLIO
 */
 
+
+.project-item {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+  opacity: 10;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+}
+.project-item a {
+  cursor: url('../img/projects2.cur'), projetos !important;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.project-thumbnail {
+  display: block;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  text-align: center;
+  color: #ffffff;
+  padding: 15px;
+}
+.project-thumbnail:hover {
+  color: #ffffff;
+}
+.project-thumbnail:hover .project-description-wrapper {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+}
+.project-thumbnail:hover .project-title,
+.project-thumbnail:hover span.see-more {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+}
+.project-description-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #ffffff;
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+}
+.project-description {
+  position: absolute;
+  top: 50%;
+  margin-top: -55px;
+  width: 100%;
+}
+.project-title {
+  font-size: 20px;
+  color: #ffffff;
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.project-title:after {
+  content: '';
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid #ffffff;
+  width: 50%;
+  margin: 0 auto;
+  opacity: 0.5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.project-thumbnail {
+  display: block;
+  color: #ffffff;
+  position: relative;
+}
+span.see-more {
+  font-style: italic;
+  letter-spacing: 3px;
+  font-size: 12px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+}
+
+
+
+
 #info {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -1329,8 +1436,8 @@ PORTFOLIO
     color: #fff!important;
     position: relative;
     z-index: 500!important;
-    padding: 5px 8px;
-    text-align: left;
+    padding: 7px 10px;
+    text-align: top;
 }
 .portfolio .text-tittle {
     color: #fff;
